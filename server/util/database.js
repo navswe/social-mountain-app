@@ -1,8 +1,8 @@
-const { CONNECTION_STRING } = process.env; //CONNECTION_STRING is stored in .env file
+const { CONNECTION_STRING } = process.env;
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(CONNECTION_STRING, {
-  dialect: "postgres",
+  dialect: "postgress",
 });
 module.exports = {
   sequelize,

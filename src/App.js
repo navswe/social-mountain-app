@@ -24,6 +24,8 @@ const App = () => {
           path="/form"
           element={state.token ? <Form /> : <Navigate to="/auth" />}
         />
+        //* Checks to see if token is present if it is then take them to the
+        form, otherwise direct them to log in */
         <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
